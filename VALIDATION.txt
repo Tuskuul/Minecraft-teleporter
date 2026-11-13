@@ -1,0 +1,38 @@
+Java 26.3 dedicated server, Java 25.
+
+Passed automated integration checks:
+- Functions, recipes and native dialog command arguments load/parse.
+- Minimum 2x3 opening with no sign and all four corners omitted.
+- Maximum 21x21 opening with core away from the left edge.
+- Rotated frame and negative coordinates.
+- Oversized 22-wide and undersized 2-high openings rejected.
+- Blocking and clearing an opening disables/re-enables the portal.
+- Name character selection, backspace, save and marker persistence.
+- Shared Home return across dimensions while Home links elsewhere.
+- Verified unloaded Nether destination before travel; loading and teleport
+  succeeded at the expected destination core coordinates.
+- Compact keyboard: ten columns, 24-unit keys, number row 1-0, QWERTY rows.
+- Displayed keys map to the correct lower/upper case character codes.
+- Manual preview, case switch, backspace, clear and save callbacks.
+- Editing does not schedule a redraw; no automatic redraw tick handler remains.
+- Legacy core migration and owner restrictions.
+- Incremental background validation of the maximum-size frame.
+- Temporary leases expire while preexisting forced chunks remain.
+
+Tests invoked player-facing functions using a command-controlled armor stand.
+No graphical Minecraft client was run. Native windows were parsed but not
+visually inspected in game. Actual placement events, mouse interaction, trigger
+buttons for non-OP players, menu rendering, movement activation, and the arrival
+step-off latch still need in-game confirmation. The pack selects players only
+for automatic travel; armor stands do not activate it during normal play.
+
+
+Destinations-page checks for this same v2.2 release:
+- Destinations action opens a separate list of named valid targets.
+- The source and incomplete portals are excluded; Settings is separate.
+- Empty state, Refresh, six-entry pagination and Back navigation.
+- Choosing a walk-through target through the UI updates the outgoing link.
+- Home shortcut selection uses the normal destination button handler and
+  returns across dimensions despite Home's own link leading elsewhere.
+- Compact keyboard, manual preview, owner checks, migration, unloading,
+  incremental validation and chunk lease checks still pass.

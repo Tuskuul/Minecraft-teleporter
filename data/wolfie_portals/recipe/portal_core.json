@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "SWS",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:chiseled_stone_bricks",
+    "W": "#minecraft:planks"
+  },
+  "result": {
+    "id": "minecraft:lodestone",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Portal Core",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "wolfie_portal_core": true
+      },
+      "minecraft:lore": [
+        {
+          "text": "Place in a stone portal base. A naming window opens.",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

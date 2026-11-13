@@ -59,3 +59,4 @@ If a menu causes a client FPS drop, compare with **Menu Background Blur** set to
 See [README.txt](README.txt) for supported blocks, ownership, updates, troubleshooting and removal, and [VALIDATION.txt](VALIDATION.txt) for the dedicated-server checks and their limits. Tests covered portal geometry, naming callbacks, destination paging, ownership, Home, and unloaded cross-dimension travel. A graphical Minecraft client was not run during those checks.
 
 The repository root contains the unpacked datapack. The exact installable archive is in [downloads](downloads/).
+
